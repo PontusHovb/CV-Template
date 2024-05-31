@@ -63,21 +63,27 @@
 }
 
 %% Header
-%% [4]: {<name>} {<phone>} {<email>} {<linkedIn>}
-\newcommand{\header}[4]{
-  \def\name{#1}
-  \def\phone{#2}
-  \def\email{#3}
-  \def\linkedin{#4}
+%% [5]: {<name>} {<phone>} {<email>} {<linkedIn>} {<github>}
+\newcommand{\header}[5]{
+    \def\name{#1}
+    \def\phone{#2}
+    \def\email{#3}
+    \notblank{#4}{\def\linkedin{#4}}{}
+    \notblank{#5}{\def\github{#5}}{}
 }
 
 \newcommand{\printcvheader}{
-  \centering
-  {\nameform \name}\nameskip
-  \mbox{\contform \phone}\contsep
-  \mbox{\contform \href{mailto:\email}{\email}}\contsep
-  \mbox{\contform \href{https://\linkedin}{\linkedin}}\contsep
-  \headerskip
+    \centering
+    {\nameform \name}\nameskip
+    \mbox{\contform \phone}\contsep
+    \mbox{\contform \href{mailto:\email}{\email}}\contsep
+    \ifdefined\linkedin
+        \mbox{\contform \href{https://\linkedin}{LinkedIn}}\contsep
+    \fi
+    \ifdefined\github
+        \mbox{\contform \href{https://\github}{GitHub}}\contsep
+    \fi
+    \headerskip
 }
 
 %%-------------------------------
@@ -137,17 +143,6 @@
     \secendskip%
 }
 
-%% Header
-%% [4]: {<name>} {<phone>} {<email>} {<linkedIn>}
-\newrobustcmd*{\cvheader}[4]{
-  {\centering
-    {\nameform#1}\nameskip
-    \mbox{\contform{#2}}\contsep
-    \mbox{\contform{\href{mailto:#3}{#3}}}\contsep
-    \mbox{\contform{\href{https://#4}{#4}}}\contsep
-    \headerskip
-  }
-}
 
 %% Education
 %% [4]: {School} {Programme} {GPA} {Date}
@@ -219,6 +214,12 @@
     Best regards, \\
     \name \\
     \phone \\
-    \href{mailto:\email}{\email}
+    \href{mailto:\email}{\email} \\
+    \ifdefined\linkedin
+        LinkedIn: \href{https://\linkedin}{\linkedin} \\
+    \fi
+    \ifdefined\github
+        GitHub: \href{https://\github}{\github} \\
+    \fi
 }
 
