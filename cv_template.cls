@@ -191,7 +191,7 @@
 }
 
 %% List
-\newenvironment*{cvlist}[0]{
+\newenvironment*{cvlist}{
     \begin{itemize}
  }{%       
     \end{itemize}
