@@ -1,9 +1,9 @@
 # CV template in LaTeX
 
 ## Files
-**CV.tex:** Output-file, importing template and content
-**cv_template.cls:** LaTeX-template, formatting
-**Folders:** Gather all content (professional experiences, education etc.)
+- **CV.tex:** Output-file, importing template and content
+- **cv_template.cls:** LaTeX-template, formatting
+- **Folders:** Gather all content (professional experiences, education etc.)
 
 ## Step-by-step guide for Overleaf
 1. Download this GitHub-resporitory
