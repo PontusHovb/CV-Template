@@ -1,0 +1,44 @@
+\documentclass[fontsize=11pt, cvmargins=0.5in, coverlettermargins=1in]{cv_template}
+
+\begin{document}
+
+\header{Your name}{Phone}{Email}{LinkedIn}
+
+\begin{cv}
+\begin{cvsection}{Education}
+    \import{Education/}{example.tex}
+\end{cvsection}
+
+\begin{cvsection}{Professional Experience}
+    \import{Professional Experience/}{example1.tex}
+    \import{Professional Experience/}{example2.tex}
+\end{cvsection}
+
+\begin{cvsection}{Leadership \& Activities}
+    \import{Leadership & Activities/}{example1.tex}
+    \import{Leadership & Activities/}{example2.tex}
+\end{cvsection}
+
+\begin{cvsection}{Projects}
+    \import{Projects/}{example1.tex}
+    \import{Projects/}{example2.tex}
+\end{cvsection}
+
+\begin{cvsection}{Skills \& Interests}
+    \begin{cvlist}
+        \import{Skills & Interests/Awards/}{example.tex}
+        \import{Skills & Interests/Achievements/}{example.tex}
+        \import{Skills & Interests/Skills & Interests/}{example.tex}
+    \end{cvlist}
+\end{cvsection}
+\end{cv}
+
+\begin{coverletter}
+  Dear Recruiting team,
+  \medskip \newline 
+  \lipsum
+  \begin{contactdetails}
+  \end{contactdetails}
+\end{coverletter}
+
+\end{document}
