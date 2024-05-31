@@ -5,7 +5,7 @@ Template to create well-formatted and modular CV (including cover letter) in LaT
 
 ## Files
 - **CV.tex:** Output-file, importing template and content
-- **cv_template.cls:** LaTeX-template, formatting
+- **cv_template.cls:** LaTeX-template, used for formatting
 - **Folders:** Gather all content (professional experiences, education etc.)
 
 ## Usage
