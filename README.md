@@ -7,6 +7,12 @@ Template to create well-formatted and modular CV (including cover letter) in LaT
 - **cv_template.cls:** LaTeX-template, formatting
 - **Folders:** Gather all content (professional experiences, education etc.)
 
+## Usage
+- Experiences are added to respective folder (Education, Professional Experience etc.)
+- CVs tailored to different jobs can be created including/excluding experiences
+- New experiences can easily be added without need to reformat CV
+- Cover letter can be created using modules (e.g. intro, professional background, strengths & interests)
+
 ## Step-by-step guide for Overleaf
 1. Download this GitHub-resporitory
 2. Create new project in Overleaf
