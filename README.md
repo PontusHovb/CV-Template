@@ -1,4 +1,6 @@
 # CV template in LaTeX
+Template to create well-formatted and modular CV (including cover letter) in LaTeX. 
+<img width="546" alt="image" src="https://github.com/PontusHovb/CV-Template/assets/67122081/15db2a41-4afd-4c08-9014-09ea76548edd">
 
 ## Files
 - **CV.tex:** Output-file, importing template and content
