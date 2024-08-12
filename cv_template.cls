@@ -76,12 +76,12 @@
     \centering
     {\nameform \name}\nameskip
     \mbox{\contform \phone}\contsep
-    \mbox{\contform \href{mailto:\email}{\email}}\contsep
+    \mbox{\contform \email}\contsep
     \ifdefined\linkedin
-        \mbox{\contform \href{https://\linkedin}{LinkedIn}}\contsep
+        \mbox{\contform \linkedin}\contsep
     \fi
     \ifdefined\github
-        \mbox{\contform \href{https://\github}{GitHub}}\contsep
+        \mbox{\contform \github}\contsep
     \fi
     \headerskip
 }
